@@ -1,0 +1,59 @@
+2021-03-09 11:59:41.6776 ERROR ErrorsController "Could not create an instance of type 'APIGateway.Handlers.Admin.GetStaffByByCompany'. Model bound complex types must not be abstract or value types and must have a parameterless constructor. Alternatively, give the 'query' parameter a non-null default value."
+2021-03-09 12:00:36.9659 ERROR ErrorsController "Could not create an instance of type 'APIGateway.Handlers.Admin.GetStaffByByCompany'. Model bound complex types must not be abstract or value types and must have a parameterless constructor. Alternatively, give the 'query' parameter a non-null default value."
+2021-03-09 15:40:12.5289 INFO Cache
+2021-03-09 15:40:14.3979 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/all_staff; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 83s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 83s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-03-09 15:40:16.5290 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/all_staff; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 83s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 83s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-03-09 16:12:23.9807 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:13:03.1144 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:13:11.6302 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:13:18.7058 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:14:12.0242 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:14:20.9840 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:14:22.9080 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:14:27.3906 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:14:47.1728 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:14:52.5819 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:14:54.6934 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:14:58.8816 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:15:10.7385 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:15:14.7703 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:15:16.6739 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:15:21.1086 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:16:57.0211 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:17:02.2487 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:17:04.0427 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:17:06.7585 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:17:15.7120 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:17:21.3981 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:17:24.7215 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:17:29.8037 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:17:44.5894 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:17:46.2279 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:17:47.6547 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:17:49.8168 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:17:55.7991 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:17:59.2482 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:18:00.6601 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:18:05.7552 INFO Email Sent 'ERN Appproval awaiting approval'
+2021-03-09 16:20:34.8452 INFO Removed Auth'ERN Appproval awaiting approval'
+2021-03-09 16:20:40.0086 INFO Could not Authenticate email 'ERN Appproval awaiting approval'
+2021-03-09 16:20:41.9841 INFO About to send'ERN Appproval awaiting approval'
+2021-03-09 16:20:45.4219 INFO Email Sent 'ERN Appproval awaiting approval'

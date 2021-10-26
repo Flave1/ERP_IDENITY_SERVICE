@@ -1,0 +1,210 @@
+2021-04-29 11:13:15.5065 INFO Cache
+2021-04-29 11:13:15.6761 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/central_authsettings; It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 11:13:16.7007 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/central_authsettings; It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 11:13:21.3220 INFO Cache
+2021-04-29 11:13:21.3557 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/authsettings; It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=2,Free=32765,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 11:13:21.7835 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/authsettings; It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 11:21:57.4129 INFO Cache
+2021-04-29 11:21:57.6022 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/central_authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 11:21:58.2887 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/central_authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 11:21:59.4349 INFO Cache
+2021-04-29 11:21:59.4889 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=2,Free=32765,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 11:21:59.7988 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 11:22:05.6193 INFO Removed Auth'Account Login'
+2021-04-29 11:22:06.7189 INFO Could not Authenticate email 'Account Login'
+2021-04-29 11:22:07.1734 INFO About to send'Account Login'
+2021-04-29 11:22:09.3175 INFO Email Sent 'Account Login'
+2021-04-29 11:22:13.5120 INFO Cache
+2021-04-29 11:22:13.6350 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 11:22:14.0220 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 129s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 12:13:59.8638 INFO Cache
+2021-04-29 12:14:00.2473 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 12:14:01.2017 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 12:16:42.0771 INFO Cache
+2021-04-29 12:16:42.1496 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/central_authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 12:16:42.5112 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/central_authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 12:16:43.2675 INFO Cache
+2021-04-29 12:16:43.3532 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=2,Free=32765,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 12:16:43.6763 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 12:16:49.8144 INFO Removed Auth'Account Login'
+2021-04-29 12:16:50.8262 INFO Could not Authenticate email 'Account Login'
+2021-04-29 12:16:51.3700 INFO About to send'Account Login'
+2021-04-29 12:16:53.3891 INFO Email Sent 'Account Login'
+2021-04-29 12:16:56.1276 INFO Cache
+2021-04-29 12:16:56.2897 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 12:16:56.6285 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/authsettings; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=2,Free=32765,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 363s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84
+2021-04-29 14:04:41.3471 INFO Cache
+2021-04-29 14:04:41.7196 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: GET http://192.168.1.100:90/all_staff; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 1101s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 1101s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseGetAsync[T](String cacheKey)
+   at EasyCaching.Core.EasyCachingAbstractProvider.GetAsync[T](String cacheKey)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.GetCacheResponseAsync(String cacheKey) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 39
+2021-04-29 14:04:42.9345 ERROR Cache not started:::: StackExchange.Redis.RedisConnectionException: No connection is active/available to service this operation: SETEX http://192.168.1.100:90/all_staff; UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 1101s ago, v: 2.1.58.34321, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-FIP18HV, IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=1,Free=32766,Min=4,Max=32767), v: 2.1.58.34321
+ ---> StackExchange.Redis.RedisConnectionException: UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 1101s ago, v: 2.1.58.34321
+   at StackExchange.Redis.TaskExtensions.TimeoutAfter(Task task, Int32 timeoutMs) in /_/src/StackExchange.Redis/TaskExtensions.cs:line 49
+   at StackExchange.Redis.ConnectionMultiplexer.WaitAllIgnoreErrorsAsync(Task[] tasks, Int32 timeoutMilliseconds, LogProxy log, String caller, Int32 callerLineNumber) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 740
+   --- End of inner exception stack trace ---
+   at StackExchange.Redis.ConnectionMultiplexer.ThrowFailed[T](TaskCompletionSource`1 source, Exception unthrownException) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 2769
+--- End of stack trace from previous location where exception was thrown ---
+   at EasyCaching.Redis.DefaultRedisCachingProvider.BaseSetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at EasyCaching.Core.EasyCachingAbstractProvider.SetAsync[T](String cacheKey, T cacheValue, TimeSpan expiration)
+   at APIGateway.Repository.Inplimentation.Cache.ResponseCacheService.CatcheResponseAsync(String cacheKey, Object response) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Repository\Inplimentation\Cache\CacheService.cs:line 84

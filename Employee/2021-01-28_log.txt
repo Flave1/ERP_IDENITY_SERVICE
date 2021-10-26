@@ -1,0 +1,4 @@
+2021-01-28 09:20:35.9851 ERROR ErrorsController "Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'Employee.Server_requests.IdentityServerRequest'."
+2021-01-28 09:25:52.5653 ERROR ErrorsController "Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'Employee.Server_requests.IdentityServerRequest'."
+2021-01-28 16:14:45.2141 ERROR ErrorsController "Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'Employee.Server_requests.IdentityServerRequest'."
+2021-01-28 16:20:44.1181 ERROR ErrorsController "Unable to resolve service for type 'System.Net.Http.IHttpClientFactory' while attempting to activate 'Employee.Server_requests.IdentityServerRequest'."

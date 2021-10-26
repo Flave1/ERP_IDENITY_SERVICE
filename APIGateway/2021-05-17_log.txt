@@ -1,0 +1,9 @@
+2021-05-17 13:49:53.3659 ERROR ErrorID : OP1L Ex : Value cannot be null or empty. (Parameter 'normalizedRoleName') ErrorStack :    at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.IsInRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRolesAsync(TUser user, IEnumerable`1 roles)
+   at GODP.APIsContinuation.Handlers.Admin.UpdateStaffCommandHandler.Handle(UpdateStaffCommand request, CancellationToken cancellationToken) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Handlers\Admin\UpdateStaffCommandHandler.cs:line 202
+2021-05-17 13:51:49.1650 ERROR ErrorID : J17Y Ex : Role SUPERADMIN,LINE MANAGERS,HR ADMIN does not exist. ErrorStack :    at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRolesAsync(TUser user, IEnumerable`1 roles)
+   at GODP.APIsContinuation.Handlers.Admin.UpdateStaffCommandHandler.Handle(UpdateStaffCommand request, CancellationToken cancellationToken) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Handlers\Admin\UpdateStaffCommandHandler.cs:line 202
+2021-05-17 14:01:28.1623 ERROR ErrorID : KQYH Ex : Role SUPERADMIN,LINE MANAGERS,HR ADMIN does not exist. ErrorStack :    at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRolesAsync(TUser user, IEnumerable`1 roles)
+   at GODP.APIsContinuation.Handlers.Admin.UpdateStaffCommandHandler.Handle(UpdateStaffCommand request, CancellationToken cancellationToken) in C:\Users\flave\Desktop\GODP\Projects\V1\GOSERP_IDENTITY_SERVER\APIGateway\Handlers\Admin\UpdateStaffCommandHandler.cs:line 202
